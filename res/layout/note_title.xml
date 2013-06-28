@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="498px"
+    android:layout_height="47px"
+    android:background="@drawable/note_title"
+    android:orientation="vertical" android:splitMotionEvents="false">
+    
+    <ImageButton
+        android:id="@+id/note_arror"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="3px"
+        android:layout_y="2px"
+        android:background="#00000000"
+        android:src="@drawable/note_btn_arror_selector" >
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/note_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="438px"
+        android:layout_y="2px"
+        android:background="#00000000"
+        android:src="@drawable/note_btn_close_selector" >
+    </ImageButton>
+    
+    <ImageButton
+        android:id="@+id/note_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="377px"
+        android:layout_y="2px"
+        android:background="#00000000"
+        android:src="@drawable/note_btn_ok_selector" >
+    </ImageButton>
+    
+</AbsoluteLayout>

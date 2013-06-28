@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="drawview_width">496px</dimen>
+    <dimen name="drawview_height">348px</dimen>
+    
+</resources>

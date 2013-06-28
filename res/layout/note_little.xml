@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.readboy.note.NoteLittleView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="498px"
+    android:layout_height="473px"
+    android:background="@drawable/note_main"
+    android:splitMotionEvents="false"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/note_undo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="351px"
+        android:layout_y="12px"
+        android:background="#00000000"
+        android:visibility="invisible" 
+        android:src="@drawable/note_btn_undo_selector" >
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/note_redo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="417px"
+        android:layout_y="12px"
+        android:background="#00000000"
+        android:visibility="invisible" 
+        android:src="@drawable/note_btn_redo_selector" >
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/note_pen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="14px"
+        android:layout_y="12px"
+        android:background="#00000000"
+        android:src="@drawable/note_btn_pen_selector" >
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/note_font"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="82px"
+        android:layout_y="12px"
+        android:background="#00000000"
+        android:src="@drawable/note_btn_font_selector" >
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/note_eraser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="147px"
+        android:layout_y="12px"
+        android:background="#00000000"
+        android:src="@drawable/note_btn_eraser_selector" >
+    </ImageButton>
+
+    <!-- 选中的按钮 -->
+
+    <ImageButton
+        android:id="@+id/note_btn_select2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="0px"
+        android:layout_y="0px"
+        android:background="#00000000"
+        android:visibility="invisible" >
+    </ImageButton>
+
+    <EditText
+        android:id="@+id/note_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="5px"
+        android:layout_y="68px"
+        android:singleLine="true"
+        android:textColor="#f000"
+        android:hint="请输入标题"
+        android:gravity="top|left"
+        android:width="488px" />
+
+
+    <com.readboy.note.DrawView
+        android:id="@+id/note_draw"
+        android:layout_width="@dimen/drawview_width"
+        android:layout_height="@dimen/drawview_height"
+        android:layout_x="1px"
+        android:layout_y="119px"
+        />
+
+
+    <com.readboy.note.DrawEdit
+        android:gravity="top|left"
+        android:id="@+id/note_edit"
+        android:layout_width="@dimen/drawview_width"
+        android:layout_height="@dimen/drawview_height"
+        android:layout_x="1px"
+        android:layout_y="119px"
+        android:paddingLeft="5px"
+        android:paddingRight="5px"
+        android:paddingBottom="5px"
+        android:background="#00000000"
+        android:text = ""
+        android:textColor="#f000"
+        android:enabled="false" />
+
+</com.readboy.note.NoteLittleView>

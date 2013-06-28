@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/big_edit_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/big_bk"
+    android:splitMotionEvents="false"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/big_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="911px"
+        android:layout_y="0px"
+        android:background="#00000000"
+        android:visibility="invisible"
+        android:src="@drawable/big_btn_close_selector" >
+    </ImageButton>
+    
+    <ImageButton
+        android:id="@+id/big_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="1055px"
+        android:layout_y="0px"
+        android:background="#00000000"
+        android:src="@drawable/big_btn_ok_selector" >
+    </ImageButton>
+    
+    <ImageButton
+        android:id="@+id/big_cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="1162px"
+        android:layout_y="0px"
+        android:background="#00000000"
+        android:src="@drawable/big_btn_cancel_selector" >
+    </ImageButton>
+    
+    <ImageButton
+        android:id="@+id/big_undo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="849px"
+        android:layout_y="45px"
+        android:background="#00000000"
+        android:visibility="invisible" 
+        android:src="@drawable/big_btn_undo_selector" >
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/big_redo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="925px"
+        android:layout_y="45px"
+        android:background="#00000000"
+        android:visibility="invisible" 
+        android:src="@drawable/big_btn_redo_selector" >
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/big_pen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="22px"
+        android:layout_y="65px"
+        android:background="#00000000"
+        android:src="@drawable/big_btn_pen_selector" >
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/big_font"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="95px"
+        android:layout_y="65px"
+        android:background="#00000000"
+        android:src="@drawable/big_btn_font_selector" >
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/big_eraser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="173px"
+        android:layout_y="65px"
+        android:background="#00000000"
+        android:src="@drawable/big_btn_eraser_selector" >
+    </ImageButton>
+
+    <!-- 选中的按钮 -->
+
+    <ImageButton
+        android:id="@+id/big_btn_select2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="0px"
+        android:layout_y="0px"
+        android:background="#00000000"
+        android:visibility="invisible" >
+    </ImageButton>
+    
+    <com.readboy.note.DrawView
+        android:selectAllOnFocus="true"
+        android:id="@+id/big_draw"
+        android:layout_width="match_parent"
+        android:layout_height="626px"
+        android:layout_x="0px"
+        android:layout_y="126px"
+        />
+
+    
+    <com.readboy.note.DrawEdit
+        android:selectAllOnFocus="false"
+        android:imeOptions="flagNoFullscreen"
+        android:gravity="top|left"
+        android:id="@+id/big_edit"
+        android:layout_width="match_parent"
+        android:layout_height="676px"
+        android:layout_x="0px"
+        android:layout_y="92px"
+        android:paddingLeft="8px"
+        android:paddingRight="8px"
+        android:paddingBottom="8px"
+        android:background="#00000000"
+        android:text = ""
+        android:textColor="#f000"
+        android:focusable="false"
+        android:enabled="false"
+         />
+    
+</AbsoluteLayout>

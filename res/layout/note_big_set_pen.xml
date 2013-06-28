@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.readboy.note.big.SetColorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/note_set_name"
+    android:background="@drawable/big_set_pen"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+    
+    <ImageButton
+        android:id="@+id/big_setpen_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="341px"
+        android:layout_y="23px"
+        android:background="#00000000"
+        android:visibility="visible"
+        android:src="@drawable/big_btn_setpen_close_selector" >
+    </ImageButton>
+    	
+</com.readboy.note.big.SetColorLayout>

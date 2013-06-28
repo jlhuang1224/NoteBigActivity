@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/big_list"
+    android:splitMotionEvents="false"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/big_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="1074px"
+        android:layout_y="0px"
+        android:background="#00000000"
+        android:onClick="onClick"
+        android:src="@drawable/big_btn_new_selector" >
+    </ImageButton>
+    
+    <ImageButton
+        android:id="@+id/big_rename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="1140px"
+        android:layout_y="0px"
+        android:background="#00000000"
+        android:onClick="onClick"
+        android:src="@drawable/big_btn_rename_selector" >
+    </ImageButton>
+    
+        
+    <ImageButton
+        android:id="@+id/big_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="1206px"
+        android:layout_y="0px"
+        android:background="#00000000"
+        android:onClick="onClick"
+        android:src="@drawable/big_btn_delete_selector" >
+    </ImageButton>
+    
+    
+    <ScrollView
+        android:id="@+id/big_listscrollView"
+        android:layout_width="match_parent"
+        android:layout_height="519px"
+        android:layout_x="0px"
+        android:layout_y="46px" >
+
+        <AbsoluteLayout
+            android:id="@+id/big_listContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </AbsoluteLayout>
+    </ScrollView>
+
+</AbsoluteLayout>
